@@ -1,0 +1,1 @@
+export const POST_API_END_POINT="http://localhost:8000/api/crud/createPost";
