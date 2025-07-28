@@ -94,8 +94,8 @@ export default function EditModal({ post, postId }) {
             <form name='Form' onSubmit={handleSubmit}>
               <div className="inputs   flex flex-col p-2 gap-y-4">
 
-              
-
+              <div className='flex flex-col gap-[1px]'>
+               <span className='  pl-2 text-gray-400'>name:</span>
                 <input 
                   name="name" 
                   placeholder='name' 
@@ -103,6 +103,10 @@ export default function EditModal({ post, postId }) {
                   value={form.name}
                   onChange={handleChange}
                 />
+              </div>
+
+              <div className='flex flex-col gap-[1px]'>
+               <span className='  pl-2 text-gray-400'>email:</span>
                 <input 
                   name="email" 
                   placeholder='email' 
@@ -110,6 +114,9 @@ export default function EditModal({ post, postId }) {
                   value={form.email}
                   onChange={handleChange}
                 />
+              </div>
+              <div className='flex flex-col gap-[1px]'>
+               <span className='  pl-2 text-gray-400'>title:</span>
                 <input 
                   name="title"  
                   placeholder='title' 
@@ -117,13 +124,21 @@ export default function EditModal({ post, postId }) {
                   value={form.title}
                   onChange={handleChange}
                 />
+
+              </div>
+
+              <div className='flex flex-col gap-[2px]'>
+               <span className='  pl-2 text-gray-400'>message:</span>
                 <textarea 
                   name="message" 
                   placeholder='message...' 
                   className='bg-zinc-300 text-zinc-800 p-2 rounded-lg outline-none'
                   value={form.message}
                   onChange={handleChange}
-                ></textarea>               
+                ></textarea>    
+                  </div>           
+
+
               </div>
               <div className="  mt-3  flex px-6">
                 <input 
