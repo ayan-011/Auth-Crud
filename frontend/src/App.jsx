@@ -41,7 +41,7 @@ function App() {
 	const { isCheckingAuth, checkAuth } = useAuthStore();
 
 	useEffect(()=>{
-		axios.post(' https://auth-crud-lime.vercel.app/ ', {}, { withCredentials: true }) // send empty body and credentials
+		axios.post(' https://auth-crud-backend.vercel.app/ ', {}, { withCredentials: true }) // send empty body and credentials
 		.then((response)=>{
            checkAuth(response.data) 
 		})
